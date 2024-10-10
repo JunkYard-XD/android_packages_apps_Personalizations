@@ -23,20 +23,20 @@
         android:key="edge_lights"
         lineage:lottie_rawRes="@raw/edge_lights" />
 
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+    <com.android.settings.preferences.SystemSettingSwitchPreference
         android:key="edge_light_enabled"
         android:title="@string/enable"
         android:defaultValue="false"
         lineage:position="top" />
 
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+    <com.android.settings.preferences.SystemSettingSwitchPreference
         android:key="edge_light_always_trigger_on_pulse"
         android:title="@string/edge_light_always_trigger_on_pulse_title"
         android:summary="@string/edge_light_always_trigger_on_pulse_summary"
         android:defaultValue="false"
         android:dependency="edge_light_enabled" />
 
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+    <com.android.settings.preferences.SystemSettingSwitchPreference
         android:key="edge_light_repeat_animation"
         android:title="@string/edge_light_repeat_animation_title"
         android:summaryOn="@string/edge_light_repeat_animation_summary_on"
@@ -44,7 +44,7 @@
         android:defaultValue="false"
         android:dependency="edge_light_enabled" />
 
-    <com.crdroid.settings.preferences.SystemSettingListPreference
+    <com.android.settings.preferences.SystemSettingListPreference
         android:key="edge_light_color_mode"
         android:title="@string/edge_light_color_mode_title"
         android:entries="@array/edge_light_color_mode_entries"
@@ -53,7 +53,7 @@
         android:defaultValue="0"
         android:dependency="edge_light_enabled" />
 
-    <com.crdroid.settings.preferences.colorpicker.SystemSettingColorPickerPreference
+    <com.android.settings.preferences.colorpicker.SystemSettingColorPickerPreference
         android:key="edge_light_custom_color"
         android:title="@string/custom_color"
         android:defaultValue="#FFFFFF"

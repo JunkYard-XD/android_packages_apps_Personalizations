@@ -16,22 +16,25 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/always_on_display_schedule_title"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.crdroid.settings.preferences.SecureSettingListPreference
+    <com.android.settings.preferences.SecureSettingListPreference
         android:key="doze_always_on_auto_mode"
         android:title="@string/night_display_auto_mode_title"
         android:dialogTitle="@string/night_display_auto_mode_title"
         android:entries="@array/doze_always_on_auto_mode_entries"
         android:entryValues="@array/doze_always_on_auto_mode_values"
-        android:persistent="false" />
+        android:persistent="false"
+        app:position="top" />
 
-    <Preference
+    <com.android.settings.preferences.ui.AdaptivePreference
         android:key="doze_always_on_auto_since"
         android:title="@string/night_display_start_time_title" />
 
-    <Preference
+    <com.android.settings.preferences.ui.AdaptivePreference
         android:key="doze_always_on_auto_till"
-        android:title="@string/night_display_end_time_title" />
+        android:title="@string/night_display_end_time_title"
+        app:position="bottom"  />
 
 </PreferenceScreen>
